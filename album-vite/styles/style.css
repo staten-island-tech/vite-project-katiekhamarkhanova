@@ -6,9 +6,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,34 +13,36 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --light-blue: #2998ff;
-  --red: #df1515;
-  --light-red: #f87171;
-  --black: #000;
-  --dark-blue: #135cc5;
+  --light-white: #ececec;
+  --dark-grey: #413c58;
+  --dark-blue: #93637E;
+  --light-blue: #b3cef3;
 
   /* intentions */
-  --primary: var(--light-blue);
-  --secondary:var(--dark-blue);
+  --primary: var(--light-white);
+  --secondary:var(--light-blue);
+  --dark-mode: var(--dark-text);
 
   /* typography */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --dark-text: #ffff;
   
 }
 
-.hero {
-  background-color: var(--primary);
+.welcome {
+  background-color: var(--secondary);
 }
 
-.warm{
-  --primary: var(--red);
-  --secondary: var(--light-red);
+.light-mode{
+  --primary: var(--light-white);
+  --secondary: var(--light-blue);
 }
-.cool{
-  --primary: var(--light-blue);
+.dark-mode{
+  --primary: var(--dark-grey);
   --secondary:var(--dark-blue);
+  --dark-mode: var(--dark-text);
 }
 
 #app {
@@ -74,7 +73,7 @@
   color: #888;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -85,4 +84,4 @@
   button {
     background-color: #f9f9f9;
   }
-}
+} */

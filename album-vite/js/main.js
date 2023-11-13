@@ -1,5 +1,5 @@
 import '../styles/style.css';
-import { menu } from "./menu.js";
+import { albums } from "./albums.js";
 import './index.js';
 import javascriptLogo from '../public/javascript.svg';
 import viteLogo from '../public/vite.svg';
@@ -22,4 +22,4 @@ import viteLogo from '../public/vite.svg';
   </div>
 `
 */
-console.log(menu);
+console.log(albums);

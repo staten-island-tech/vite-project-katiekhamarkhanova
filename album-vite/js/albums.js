@@ -1,4 +1,4 @@
-const menu = [
+const albums = [
     {
         name: "pizza",
         vegetarian: false,
@@ -9,4 +9,4 @@ const menu = [
     },
 ];
 
-export { menu };
+export { albums };
