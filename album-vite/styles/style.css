@@ -6,7 +6,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,13 +20,15 @@
   /* intentions */
   --primary: var(--light-white);
   --secondary:var(--light-blue);
-  --dark-mode: var(--dark-text);
+  --dark-mode-text: var(--dark-text);
+  --light-mode-text: var(--light-text);
 
   /* typography */
   --h1: 3.052rem;
   --h2: 2.441rem;
   --h3: 1.953rem;
   --dark-text: #ffff;
+  --light-text: #413c58;
   
 }
 
@@ -42,7 +43,7 @@
 .dark-mode{
   --primary: var(--dark-grey);
   --secondary:var(--dark-blue);
-  --dark-mode: var(--dark-text);
+  --dark-mode-text: var(--dark-text);
 }
 
 #app {
