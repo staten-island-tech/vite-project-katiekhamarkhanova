@@ -12,7 +12,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--primary);
-  color: var(--light-mode-text);
 }
 
 h1 {

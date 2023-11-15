@@ -1,7 +1,7 @@
 @import url(variables.css);
 
 :root {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   text-align: center;
   line-height: 1.5;
   font-weight: 400;
@@ -14,12 +14,12 @@
 
   --light-white: #ececec;
   --dark-grey: #413c58;
-  --dark-blue: #93637E;
+  --dark-blue: #636693;
   --light-blue: #b3cef3;
 
   /* intentions */
   --primary: var(--light-white);
-  --secondary:var(--light-blue);
+  --secondary: var(--light-blue);
   --dark-mode-text: var(--dark-text);
   --light-mode-text: var(--light-text);
 
@@ -29,21 +29,24 @@
   --h3: 1.953rem;
   --dark-text: #ffff;
   --light-text: #413c58;
-  
 }
 
 .welcome {
   background-color: var(--secondary);
+  padding: 1.5rem;
 }
 
-.light-mode{
+.light-mode {
   --primary: var(--light-white);
   --secondary: var(--light-blue);
+  --light-mode-text: var(--light-text);
+   color: var(--light-mode-text);
 }
-.dark-mode{
+.dark-mode {
   --primary: var(--dark-grey);
-  --secondary:var(--dark-blue);
+  --secondary: var(--dark-blue);
   --dark-mode-text: var(--dark-text);
+   color: var(--dark-mode-text);
 }
 
 #app {

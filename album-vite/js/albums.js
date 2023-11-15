@@ -1,11 +1,9 @@
 const albums = [
     {
-        name: "pizza",
-        vegetarian: false,
+        name: "",
     },
     {
-        name: "salad",
-        vegetarian: true,
+        name: "",
     },
 ];
 
