@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/music icons.png" />
+    <link rel="icon" type="image/svg+xml" href="/music icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +13,17 @@
     <title>Album Store</title>
   </head>
   <body class="light-mode">
-    <div id="app"></div>
     <div class="welcome">
       <h1>Welcome!</h1>
       <button class="btn">Click me to switch light and dark modes!</button>
     </div>
+    <div class="navbar" id="light-navbar">
+      <button class = "pop-button">Pop</button>
+      <button class = "rock-button">Rock</button>
+      <button class="jazz-button">Jazz</button>
+      <button class="kpop-button">K-pop</button>
+    </div>
+    <div id="app"></div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

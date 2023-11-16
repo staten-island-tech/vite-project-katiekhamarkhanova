@@ -16,13 +16,16 @@
   --dark-grey: #413c58;
   --dark-blue: #636693;
   --light-blue: #b3cef3;
+  --blue: #91b8ee;
+  --darker-blue: #636693;
 
   /* intentions */
   --primary: var(--light-white);
   --secondary: var(--light-blue);
   --dark-mode-text: var(--dark-text);
   --light-mode-text: var(--light-text);
-
+  --light-navbar: var(--blue);
+  --dark-navbar: var(--darker-blue);
   /* typography */
   --h1: 3.052rem;
   --h2: 2.441rem;
@@ -34,6 +37,21 @@
 .welcome {
   background-color: var(--secondary);
   padding: 1.5rem;
+  margin-top: 2.0rem;
+}
+.navbar{
+  margin-top: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+#light-navbar {
+  --light-navbar: var(--blue);
+  background-color: var(--light-navbar);
+}
+#dark-navbar {
+  -dark-navbar: var(--darker-blue);
+  background-color: var(--dark-navbar);
 }
 
 .light-mode {
