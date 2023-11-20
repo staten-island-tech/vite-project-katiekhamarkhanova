@@ -7,15 +7,15 @@ function switchModes() {
       document.body.classList.add("light-mode");
       document.body.classList.remove("dark-mode");
     }
-  });
-  document.querySelector(".btn").addEventListener("click", function () {
-    if (document.navbar.id.contains("light-navbar")) {
-      document.navbar.id.add("dark-navbar");
-      document.navbar.id.remove("light-navbar");
-    } else {
-      document.navbar.id.add("light-navbar");
-      document.navbar.id.remove("dark-navbar");
-    }
+    document.querySelector(".btn").addEventListener("click", function () {
+      if (document.div.classList.contains("light-navbar")) {
+        document.div.classList.add("dark-navbar");
+        document.div.classList.remove("light-navbar");
+      } else {
+        document.div.classList.add("light-navbar");
+        document.div.classList.remove("dark-navbar");
+      }
+    });
   });
 }
 switchModes();
