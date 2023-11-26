@@ -17,7 +17,7 @@
   --dark-blue: #636693;
   --light-blue: #b3cef3;
   --blue: #91b8ee;
-  --darker-blue: #43455e;
+  --darker-blue: #505381;
 
   /* intentions */
   --primary: var(--light-white);
@@ -44,26 +44,29 @@
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--light-navbar);
+}
+.dark-navbar {
+  --dark-navbar: var(--darker-blue);  
+  background-color: var(--dark-navbar);
 }
 .light-navbar {
   --light-navbar: var(--blue);
   background-color: var(--light-navbar);
 }
-.dark-navbar {
-  --dark-navbar: var(--darker-blue);
-  background-color: var(--dark-navbar);
-}
-
 .light-mode {
   --primary: var(--light-white);
   --secondary: var(--light-blue);
   --light-mode-text: var(--light-text);
+  --light-navbar: var(--blue);
    color: var(--light-mode-text);
+
 }
 .dark-mode {
   --primary: var(--dark-grey);
   --secondary: var(--dark-blue);
   --dark-mode-text: var(--dark-text);
+  --dark-navbar: var(--darker-blue); 
    color: var(--dark-mode-text);
 }
 
