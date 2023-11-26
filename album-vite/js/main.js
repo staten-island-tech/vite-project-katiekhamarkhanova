@@ -1,6 +1,7 @@
 import '../styles/style.css';
 import { albums } from "./albums.js";
 import './index.js';
+import './dom.js';
 import javascriptLogo from '../public/javascript.svg';
 import viteLogo from '../public/vite.svg';
 

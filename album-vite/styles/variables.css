@@ -38,3 +38,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+img {
+  width: 80%;
+  object-fit: cover;
+  height: 60%;
+  border-radius: 20px;
+}
+

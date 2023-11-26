@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url(media.css);
 
 :root {
   font-family: "Nanum Gothic", sans-serif;
@@ -74,28 +75,33 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
   padding: 2em;
+  text-align: center;
+  background-color: white;
+  width: 23%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+  display: block;
 }
-
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: scale(1.1);
+}
+.alignButton {
+  display: block;
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 /* @media (prefers-color-scheme: light) {
