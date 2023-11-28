@@ -10,7 +10,7 @@ const DOMSelectors = {
   rockBtn: document.querySelector(".rock-button"),
   jazzBtn: document.querySelector(".jazz-button"),
   kpopBtn: document.querySelector(".kpop-button"),
-  button: document.querySelectorAll("button")
+  button: document.querySelectorAll("button"),
 };
 
 function addCard(arr) {
@@ -34,33 +34,35 @@ addCard(albums);
 
 function addPopCards() {
   DOMSelectors.popBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = ""
-    const popCards = albums.filter((albums) => albums.genre.includes("western pop"));
-    addCard(popCards)
-})
+    DOMSelectors.app.innerHTML = "";
+    const popCards = albums.filter((albums) =>
+      albums.genre.includes("western pop")
+    );
+    addCard(popCards);
+  });
 }
 addPopCards();
 function addRockCards() {
   DOMSelectors.rockBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = ""
+    DOMSelectors.app.innerHTML = "";
     const rockCards = albums.filter((albums) => albums.genre.includes("rock"));
-    addCard(rockCards)
-})
+    addCard(rockCards);
+  });
 }
 addRockCards();
 function addJazzCards() {
   DOMSelectors.jazzBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = ""
+    DOMSelectors.app.innerHTML = "";
     const jazzCards = albums.filter((albums) => albums.genre.includes("jazz"));
-    addCard(jazzCards)
-})
+    addCard(jazzCards);
+  });
 }
 addJazzCards();
 function addKpopCards() {
   DOMSelectors.kpopBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = ""
+    DOMSelectors.app.innerHTML = "";
     const kpopCards = albums.filter((albums) => albums.genre.includes("k-pop"));
-    addCard(kpopCards)
-})
+    addCard(kpopCards);
+  });
 }
 addKpopCards();

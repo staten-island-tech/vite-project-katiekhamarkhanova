@@ -40,11 +40,11 @@
 .welcome {
   background-color: var(--secondary);
   padding: 1.5rem;
-  margin-top: 2.0rem;
+  margin-top: 2rem;
 }
 
 .dark-navbar {
-  --navbar: var(--darker-blue);  
+  --navbar: var(--darker-blue);
 }
 .light-navbar {
   --navbar: var(--blue);
@@ -53,14 +53,13 @@
   --primary: var(--light-white);
   --secondary: var(--light-blue);
   --light-mode-text: var(--light-text);
-   color: var(--light-mode-text);
-
+  color: var(--light-mode-text);
 }
 .dark-mode {
   --primary: var(--dark-grey);
   --secondary: var(--dark-blue);
   --dark-mode-text: var(--dark-text);
-   color: var(--dark-mode-text);
+  color: var(--dark-mode-text);
 }
 
 #app {
@@ -96,7 +95,7 @@
 .dark-card {
   --card: var(--gray-blue);
   --dark-mode-text: var(--dark-text);
-   color: var(--dark-mode-text);
+  color: var(--dark-mode-text);
 }
 #card:hover {
   transform: scale(1.1);
@@ -106,16 +105,3 @@
   text-align: center;
   margin-top: 1.5em;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
