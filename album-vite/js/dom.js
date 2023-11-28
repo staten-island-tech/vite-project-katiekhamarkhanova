@@ -17,7 +17,7 @@ function addCard(arr) {
   arr.forEach((album) =>
     DOMSelectors.app.insertAdjacentHTML(
       "beforeend",
-      `<div class="card">
+      `<div id="card">
   <h2>${album.title}</h2>
   <h3>${album.artist}</h3>
   <img src="${album.coverImage}" alt=""></img>
@@ -35,24 +35,32 @@ addCard(albums);
 function addPopCards() {
   DOMSelectors.popBtn.addEventListener("click", function () {
     DOMSelectors.app.innerHTML = ""
-    // filter cards here : const popCards = ...
+    const popCards = albums.filter((albums) => albums.genre.includes("western pop"));
     addCard(popCards)
+})
 }
+addPopCards();
 function addRockCards() {
   DOMSelectors.rockBtn.addEventListener("click", function () {
     DOMSelectors.app.innerHTML = ""
-    // filter cards here : const rockCards = ...
+    const rockCards = albums.filter((albums) => albums.genre.includes("rock"));
     addCard(rockCards)
+})
 }
+addRockCards();
 function addJazzCards() {
   DOMSelectors.jazzBtn.addEventListener("click", function () {
     DOMSelectors.app.innerHTML = ""
-    // filter cards here : const jazzCards = ...
+    const jazzCards = albums.filter((albums) => albums.genre.includes("jazz"));
     addCard(jazzCards)
+})
 }
+addJazzCards();
 function addKpopCards() {
   DOMSelectors.kpopBtn.addEventListener("click", function () {
     DOMSelectors.app.innerHTML = ""
-    // filter cards here : const kpopCards = ...
+    const kpopCards = albums.filter((albums) => albums.genre.includes("k-pop"));
     addCard(kpopCards)
+})
 }
+addKpopCards();

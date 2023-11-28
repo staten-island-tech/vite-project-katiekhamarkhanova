@@ -44,4 +44,11 @@ img {
   height: 60%;
   border-radius: 20px;
 }
+nav {
+  margin-top: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--navbar);
+}
 
