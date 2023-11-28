@@ -1,4 +1,3 @@
-
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("light-mode")) {
     document.body.classList.add("dark-mode");
