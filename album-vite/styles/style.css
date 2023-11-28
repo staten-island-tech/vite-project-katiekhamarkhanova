@@ -45,7 +45,6 @@
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--light-navbar);
 }
 .dark-navbar {
   --dark-navbar: var(--darker-blue);  
