@@ -1,3 +1,5 @@
+import { albums } from "./albums.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".btn").addEventListener("click", function () {
     if (document.body.classList.contains("light-mode")) {
