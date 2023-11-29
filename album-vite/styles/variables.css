@@ -13,7 +13,13 @@ body {
   min-height: 100vh;
   background-color: var(--primary);
 }
-
+section {
+  margin-top: 6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--navbar);
+}
 h1 {
   font-size: var(--h1);
   line-height: 1.1;
@@ -43,11 +49,4 @@ img {
   object-fit: cover;
   height: 60%;
   border-radius: 20px;
-}
-nav {
-  margin-top: 6rem;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--navbar);
 }

@@ -1,8 +1,8 @@
 import { albums } from "./albums.js";
-
+export { DOMSelectors }
 const DOMSelectors = {
   app: document.querySelector("#app"),
-  card: document.querySelectorAll(".card"),
+  card: document.querySelectorAll("#card"),
   h2s: document.querySelectorAll("h2"),
   h3s: document.querySelectorAll("h3"),
   imgHTML: document.querySelectorAll("img"),
@@ -17,7 +17,7 @@ function addCard(arr) {
   arr.forEach((album) =>
     DOMSelectors.app.insertAdjacentHTML(
       "beforeend",
-      `<div id="card">
+      `<div class="light-card" id="card">
   <h2>${album.title}</h2>
   <h3>${album.artist}</h3>
   <img src="${album.coverImage}" alt=""></img>
