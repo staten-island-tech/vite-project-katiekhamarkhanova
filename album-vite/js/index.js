@@ -1,6 +1,4 @@
-import { DOMSelectors } from "./dom.js";
-
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".btn").addEventListener("click", function () {
     if (document.body.classList.contains("light-mode")) {
       document.body.classList.add("dark-mode");
@@ -9,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.body.classList.add("light-mode");
       document.body.classList.remove("dark-mode");
     }
-  
-  
     if (document.querySelector("section").classList.contains("light-navbar")) {
       document.querySelector("section").classList.add("dark-navbar");
       document.querySelector("section").classList.remove("light-navbar");
@@ -28,3 +24,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
 });
 })});
+
+//  ".pop-button", ".rock-button", ".jazz-button", ".kpop-button"
