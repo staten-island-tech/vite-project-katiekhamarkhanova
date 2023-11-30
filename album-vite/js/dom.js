@@ -1,5 +1,5 @@
 import { albums } from "./albums.js";
-export { DOMSelectors }
+export { DOMSelectors };
 const DOMSelectors = {
   app: document.querySelector("#app"),
   card: document.querySelectorAll("#card"),
