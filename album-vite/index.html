@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/music icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Album Store</title>
   </head>
-  <body>
+  <body class="light-mode">
+    <div class="welcome">
+      <h1>Welcome!</h1>
+      <button class="btn">Click me to switch light and dark modes!</button>
+    </div>
+    <section class="light-navbar">
+      <button class="pop-button" id="genre-button">Pop</button>
+      <button class="rock-button" id="genre-button">Rock</button>
+      <button class="jazz-button" id="genre-button">Jazz</button>
+      <button class="kpop-button" id="genre-button">K-pop</button>
+    </section>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

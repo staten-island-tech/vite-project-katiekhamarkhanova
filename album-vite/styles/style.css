@@ -1,0 +1,107 @@
+@import url(variables.css);
+@import url(media.css);
+
+:root {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --light-white: #ececec;
+  --dark-grey: #413c58;
+  --dark-blue: #636693;
+  --light-blue: #b3cef3;
+  --blue: #91b8ee;
+  --darker-blue: #505381;
+  --gray-blue: #5f6188;
+  --white: #ffff;
+
+  /* intentions */
+  --primary: var(--light-white);
+  --secondary: var(--light-blue);
+  --dark-mode-text: var(--dark-text);
+  --light-mode-text: var(--light-text);
+  --navbar: var(--blue);
+  --card: var(--white);
+  /* typography */
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --dark-text: #ffff;
+  --light-text: #413c58;
+}
+
+.welcome {
+  background-color: var(--secondary);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.dark-navbar {
+  --navbar: var(--darker-blue);
+}
+.light-navbar {
+  --navbar: var(--blue);
+}
+.light-mode {
+  --primary: var(--light-white);
+  --secondary: var(--light-blue);
+  --light-mode-text: var(--light-text);
+  color: var(--light-mode-text);
+}
+.dark-mode {
+  --primary: var(--dark-grey);
+  --secondary: var(--dark-blue);
+  --dark-mode-text: var(--dark-text);
+  color: var(--dark-mode-text);
+}
+
+#app {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#card {
+  padding: 2em;
+  text-align: center;
+  background-color: var(--card);
+  width: 23%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+  display: block;
+  filter: drop-shadow(8px 15px 10px rgb(53, 53, 53));
+}
+.light-card {
+  --card: var(--white);
+  --light-mode-text: var(--light-text);
+  color: var(--light-mode-text);
+}
+.dark-card {
+  --card: var(--gray-blue);
+  --dark-mode-text: var(--dark-text);
+  color: var(--dark-mode-text);
+}
+#card:hover {
+  transform: scale(1.1);
+}
+.alignButton {
+  display: block;
+  text-align: center;
+  margin-top: 1.5em;
+}
