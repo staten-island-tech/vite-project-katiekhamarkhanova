@@ -18,6 +18,7 @@ let currentMode = "light";
     document.querySelectorAll("#card").forEach(function (card) {
       if (card.classList.contains("light-card")) {
         card.classList.add("dark-card");
+        card.classList.remove("light-card");
       } else {
         card.classList.add("light-card");
         card.classList.remove("dark-card");
