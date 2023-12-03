@@ -1,5 +1,5 @@
 import { albums } from "./albums.js";
-export { DOMSelectors };
+
 const DOMSelectors = {
   app: document.querySelector("#app"),
   card: document.querySelectorAll("#card"),
@@ -25,44 +25,30 @@ function addCard(arr) {
   <button type="button" id="btn">Add to Cart</button>
   </div>
 </div>`
-    )
+    ),
   );
 }
 addCard(albums);
 
-// filter cards
-
-function addPopCards() {
-  DOMSelectors.popBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = "";
-    const popCards = albums.filter((albums) =>
-      albums.genre.includes("western pop")
-    );
-    addCard(popCards);
+let buttons = document.querySelectorAll("#genre-button");
+buttons.forEach((button) => button.addEventListener("click", function() {
+  DOMSelectors.app.innerHTML = "";
+  let filter = button.textContent
+  const filteredCards = albums.filter((albums) => albums.genre.includes(filter))
+  addCard(filteredCards)
+  filteredCardModes()
+}
+))
+function filteredCardModes() {
+  const body = document.querySelector("body");
+  const isDarkMode = body.classList.contains("dark-mode");
+  document.querySelectorAll("#card").forEach(function (card) {
+    if (isDarkMode) {
+      card.classList.add("dark-card");
+      card.classList.remove("light-card");
+    } else {
+      card.classList.add("light-card");
+      card.classList.remove("dark-card");
+    }
   });
 }
-addPopCards();
-function addRockCards() {
-  DOMSelectors.rockBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = "";
-    const rockCards = albums.filter((albums) => albums.genre.includes("rock"));
-    addCard(rockCards);
-  });
-}
-addRockCards();
-function addJazzCards() {
-  DOMSelectors.jazzBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = "";
-    const jazzCards = albums.filter((albums) => albums.genre.includes("jazz"));
-    addCard(jazzCards);
-  });
-}
-addJazzCards();
-function addKpopCards() {
-  DOMSelectors.kpopBtn.addEventListener("click", function () {
-    DOMSelectors.app.innerHTML = "";
-    const kpopCards = albums.filter((albums) => albums.genre.includes("k-pop"));
-    addCard(kpopCards);
-  });
-}
-addKpopCards();
