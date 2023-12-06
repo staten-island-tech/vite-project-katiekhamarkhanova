@@ -52,3 +52,38 @@ function filteredCardModes() {
     }
   });
 }
+
+/* function addPopCards() {
+  DOMSelectors.popBtn.addEventListener("click", function () {
+    DOMSelectors.app.innerHTML = "";
+    const popCards = albums.filter((albums) =>
+      albums.genre.includes("western pop")
+    );
+    addCard(popCards);
+  });
+}
+addPopCards();
+function addRockCards() {
+  DOMSelectors.rockBtn.addEventListener("click", function () {
+    DOMSelectors.app.innerHTML = "";
+    const rockCards = albums.filter((albums) => albums.genre.includes("rock"));
+    addCard(rockCards);
+  });
+}
+addRockCards();
+function addJazzCards() {
+  DOMSelectors.jazzBtn.addEventListener("click", function () {
+    DOMSelectors.app.innerHTML = "";
+    const jazzCards = albums.filter((albums) => albums.genre.includes("jazz"));
+    addCard(jazzCards);
+  });
+}
+addJazzCards();
+function addkpopCards() {
+  DOMSelectors.kpopBtn.addEventListener("click", function () {
+    DOMSelectors.app.innerHTML = "";
+    const kpopCards = albums.filter((albums) => albums.genre.includes("k-pop"));
+    addCard(kpopCards);
+  });
+}
+addkpopCards(); */
